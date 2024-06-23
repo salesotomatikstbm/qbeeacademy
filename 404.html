@@ -38,22 +38,19 @@
 <body>
   <div class="container">
     <h1>404 - Page Not Found</h1>
-    <p>Sorry, the page you are looking for does not exist. You will be redirected to the homepage in <span class="countdown">5</span> seconds. wait qbee</p>
+    <p>Sorry, the page you are looking for does not exist. You will be redirected to the homepage in <span class="countdown">5</span> seconds.</p>
   </div>
-
   <script>
     // Countdown and redirect
     let countdownElement = document.querySelector('.countdown');
     let countdown = 5;
-
     function updateCountdown() {
       countdown--;
       countdownElement.textContent = countdown;
       if (countdown === 0) {
-        window.location.href = "/qbeeacademy";
+        window.location.href = "/";
       }
     }
-
     setInterval(updateCountdown, 1000);
   </script>
 </body>
