@@ -5,8 +5,10 @@ import App from './App';
 import './index.css';
 
 ReactDOM.render(
-  <Router basename="/qbeeacademy">
-    <App />
-  </Router>,
+  <React.StrictMode>
+    <Router basename={process.env.PUBLIC_URL}>
+      <App />
+    </Router>
+  </React.StrictMode>,
   document.getElementById('root')
 );
