@@ -5,7 +5,7 @@ import App from './App';
 import './index.css';
 
 ReactDOM.render(
-  <Router basename="/">
+  <Router basename="/qbeeacademy">
     <App />
   </Router>,
   document.getElementById('root')
