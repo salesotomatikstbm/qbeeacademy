@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Page Not Found</title>
+  <title>404 - Page Not Found</title>
   <style>
     body {
       display: flex;
@@ -45,6 +45,7 @@
     // Countdown and redirect
     let countdownElement = document.querySelector('.countdown');
     let countdown = 5;
+
     function updateCountdown() {
       countdown--;
       countdownElement.textContent = countdown;
@@ -52,6 +53,7 @@
         window.location.href = "/";
       }
     }
+
     setInterval(updateCountdown, 1000);
   </script>
 </body>
