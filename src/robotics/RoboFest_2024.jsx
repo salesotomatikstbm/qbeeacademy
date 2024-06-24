@@ -1,11 +1,11 @@
 import React from 'react';
 import Robo_Head_Content from './Robo_Head_Content';
 import event from '../assets/event.png';
+import headerBlob from '../assets/bot.png';
 
 const RoboFest2024 = () => {
   return (
     <div className="px-6 py-14 md:px-10 md:py-16 lg:pb-12 bg-gray-100">
-
       <Robo_Head_Content />
 
       <div className="flex flex-col lg:flex-row lg:gap-16">
@@ -24,33 +24,60 @@ const RoboFest2024 = () => {
               <div className="flex items-start gap-4 highlight-section flex-grow">
                 <div>
                   <h4 className="text-[#202658] text-xl font-semibold text-blue-600 font-bold">Bot Building Workshop</h4>
-                  <p className="text-[#202658]">Engage in an interactive workshop where participants can build their own robots and learn the basics of robotics.</p>
+                  <ul className="list-disc list-inside text-[#202658]">
+                    <li>Build your own robots from scratch.</li>
+                    <li>Learn the basics of robotics: components, design principles, and programming.</li>
+                    <li>Hands-on session suitable for all skill levels.</li>
+                  </ul>
                 </div>
               </div>
               <div className="flex items-start gap-4 highlight-section flex-grow">
                 <div>
                   <h4 className="text-[#202658] text-xl font-semibold text-blue-600 font-bold">RoboRace Challenge Game</h4>
-                  <p className="text-[#202658]">Participate in an exciting RoboRace Challenge and showcase your robot's speed and agility.</p>
+                  <ul className="list-disc list-inside text-[#202658]">
+                    <li>Compete to showcase your robot's speed and agility.</li>
+                    <li>Navigate through a challenging course with obstacles.</li>
+                    <li>Test your engineering and teamwork abilities.</li>
+                  </ul>
                 </div>
               </div>
               <div className="flex items-start gap-4 highlight-section flex-grow">
                 <div>
                   <h4 className="text-[#202658] text-xl font-semibold text-blue-600 font-bold">Bot Showcase and Demonstrations</h4>
-                  <p className="text-[#202658]">See a variety of robots on display, each demonstrating different capabilities and innovations.</p>
+                  <ul className="list-disc list-inside text-[#202658]">
+                    <li>See a variety of robots on display.</li>
+                    <li>Discover unique capabilities and innovations.</li>
+                    <li>Learn the science behind each exhibit from experts.</li>
+                  </ul>
                 </div>
               </div>
               <div className="flex items-start gap-4 highlight-section flex-grow">
                 <div>
                   <h4 className="text-[#202658] text-xl font-semibold text-blue-600 font-bold">Expert Talk on the Future of Robotics Education</h4>
-                  <p className="text-[#202658]">Gain insights from industry experts on the future of robotics education and the skills needed to excel in this field.</p>
+                  <ul className="list-disc list-inside text-[#202658]">
+                    <li>Insights from leading industry experts.</li>
+                    <li>Learn about emerging trends and essential skills.</li>
+                    <li>Understand how robotics is transforming industries.</li>
+                  </ul>
                 </div>
               </div>
               <div className="flex items-start gap-4 highlight-section flex-grow">
                 <div>
                   <h4 className="text-[#202658] text-xl font-semibold text-blue-600 font-bold">Overview of Our Robotics Courses</h4>
-                  <p className="text-[#202658]">Learn about our comprehensive robotics courses designed to equip students with the knowledge and skills required in the robotics industry.</p>
+                  <ul className="list-disc list-inside text-[#202658]">
+                    <li>Discover our comprehensive robotics courses.</li>
+                    <li>Courses cover basic programming to advanced robotics engineering.</li>
+                    <li>Prepare students with the knowledge and skills for the robotics industry.</li>
+                  </ul>
                 </div>
               </div>
+            </div>
+            <div className="w-full md:w-1/2 flex justify-center md:justify-end mt-14 md:mt-0">
+              <img
+                src={headerBlob}
+                alt="Tech Illustration"
+                className="w-full md:w-4/5 lg:w-3/4 xl:w-2/3"
+              />
             </div>
             <div className="text-center py-8">
               <a
@@ -66,7 +93,6 @@ const RoboFest2024 = () => {
           </div>
         </div>
       </div>
-
     </div>
   );
 };

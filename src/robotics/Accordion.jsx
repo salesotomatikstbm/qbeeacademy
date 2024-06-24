@@ -3,10 +3,14 @@ import React, { useState } from "react";
 const Accordion = ({ title, answer }) => {
   const [accordionOpen, setAccordionOpen] = useState(false);
 
+  const toggleAccordion = () => {
+    setAccordionOpen(!accordionOpen);
+  };
+
   return (
     <div className="py-2">
       <button
-        onClick={() => setAccordionOpen(!accordionOpen)}
+        onClick={toggleAccordion}
         className="flex justify-between w-full items-center py-2 px-4 bg-gray-200 rounded-lg hover:bg-gray-300 focus:outline-none focus:bg-gray-300"
       >
         <span className="font-medium text-left">{title}</span>
@@ -24,7 +28,7 @@ const Accordion = ({ title, answer }) => {
       </button>
       <div
         className={`overflow-hidden transition-all duration-300 ease-in-out ${
-          accordionOpen ? "max-h-36" : "max-h-0"
+          accordionOpen ? "max-h-full" : "max-h-0"
         }`}
       >
         <div className="p-4 bg-white rounded-lg shadow-md text-left">{answer}</div>

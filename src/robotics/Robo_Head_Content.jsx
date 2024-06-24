@@ -7,12 +7,11 @@ const Robo_Head_Content = () => {
         Celebrate with us at <span className="text-blue-600">RoboFest 2024!</span>
       </h2>
 
-      <div className="mx-auto" style={{ maxWidth: '70%' }}>
-        <p className="text-sm md:text-base text-left mb-4 text-center">
-          Welcome to RoboFest 2024! Join us for an exciting event where innovation meets education. This is your chance to experience firsthand the future of learning with our cutting-edge robotics classes designed for young minds. At RoboFest, you'll discover how our programs can transform your child's curiosity into real-world skills.
+      <div className="mx-auto max-w-full md:max-w-3/4 lg:max-w-2/3">
+        <p className="text-sm md:text-base lg:text-lg mb-4 text-center">
+          Welcome to RoboFest 2024! Join us for an exciting event where innovation meets education. Experience the future of learning with our cutting-edge robotics classes for young minds. Discover how our programs can transform your child's curiosity into real-world skills.
         </p>
-
-          </div>
+      </div>
     </div>
   );
 };

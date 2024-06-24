@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -38,6 +38,7 @@ const PopularCourses = () => {
   ];
 
   const [isMobileView, setIsMobileView] = useState(false);
+  const sliderRef = useRef(null);
 
   useEffect(() => {
     // Function to check screen width and update state for mobile view
@@ -70,6 +71,15 @@ const PopularCourses = () => {
     autoplaySpeed: 5000, // Change slide every 5 seconds
   };
 
+  // Handle touch and mouse events to pause and play the slider
+  const handleTouchStart = () => {
+    sliderRef.current.slickPause();
+  };
+
+  const handleTouchEnd = () => {
+    sliderRef.current.slickPlay();
+  };
+
   return (
     <div className="py-12">
       <section className="container mx-auto px-6 lg:px-24">
@@ -77,8 +87,8 @@ const PopularCourses = () => {
 
         {/* Mobile View (Slider) */}
         {isMobileView && (
-          <div className="mb-8">
-            <Slider {...sliderSettings}>
+          <div className="mb-8" onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd} onMouseDown={handleTouchStart} onMouseUp={handleTouchEnd}>
+            <Slider ref={sliderRef} {...sliderSettings}>
               {courses.map((course, index) => (
                 <div key={index} className="bg-white shadow-lg rounded-lg overflow-hidden">
                   <div className="relative bg-gray-100 p-4">

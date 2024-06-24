@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 const EventDetails = () => {
   const calculateTimeLeft = () => {
-    const difference = +new Date(`2024-07-14T23:59:59`) - +new Date();
+    const difference = +new Date(`2024-07-10T23:59:59`) - +new Date();
     let timeLeft = {};
 
     if (difference > 0) {
@@ -58,19 +58,19 @@ const EventDetails = () => {
 
       <div className="text-center mb-6">
         <h2 className="text-2xl md:text-3xl font-bold">
-          &amp; get <b>FREE BONUSES</b> worth&nbsp;<b>INR 36000</b>
+          &amp; get <b>FREE BONUSES</b> worth&nbsp;<span className="text-gray-500 line-through mr-2 md:mr-4">₹7500</span> <b>₹5000</b>
         </h2>
       </div>
 
-      <div className="flex flex-wrap justify-center lg:justify-end mb-6">
-        <div className="w-full px-4 lg:w-1/2 lg:text-right">
-          <div className="mb-4">
+     
+        <div className="w-full px-4 ">
+          <div className="mb-4 text-center">
             <h2 className="text-xl md:text-2xl">
-              <span className="text-gray-500 line-through mr-2 md:mr-4">₹399</span> ₹99
+            Registration Fees <span className="text-gray-500 line-through mr-2 md:mr-4">₹399</span> ₹99
             </h2>
           </div>
         </div>
-      </div>
+      
 
       <div className="text-center">
         <a

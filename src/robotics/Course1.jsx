@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -44,6 +44,7 @@ const Course = () => {
   ];
 
   const [isMobileView, setIsMobileView] = useState(false);
+  const sliderRef = useRef(null);
 
   useEffect(() => {
     const checkScreenWidth = () => {
@@ -67,14 +68,28 @@ const Course = () => {
     pauseOnHover: true,
   };
 
+  const handleTouchStart = () => {
+    sliderRef.current.slickPause();
+  };
+
+  const handleTouchEnd = () => {
+    sliderRef.current.slickPlay();
+  };
+
   return (
     <div className="py-12">
       <section className="container mx-auto px-6 lg:px-24">
         <h1 className="text-center text-4xl font-bold mb-8">Coding Courses</h1>
 
         {isMobileView ? (
-          <div className="mb-8">
-            <Slider {...sliderSettings}>
+          <div
+            className="mb-8"
+            onTouchStart={handleTouchStart}
+            onTouchEnd={handleTouchEnd}
+            onMouseDown={handleTouchStart}
+            onMouseUp={handleTouchEnd}
+          >
+            <Slider ref={sliderRef} {...sliderSettings}>
               {courses.map((course, index) => (
                 <div key={index} className="bg-white shadow-lg rounded-lg overflow-hidden">
                   <div className="relative bg-gray-100 p-4">

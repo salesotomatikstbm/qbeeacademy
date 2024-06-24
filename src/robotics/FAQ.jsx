@@ -7,92 +7,93 @@ const FAQ = () => {
       <h1 className="text-center text-3xl lg:text-4xl font-bold mb-8">FAQ</h1>
       <div className="max-w-3xl mx-auto">
         <div className="grid gap-4">
+          
           <Accordion
-            title="What is Robofest 2024?"
+            title="What is QBee Academy?"
             answer={
               <span>
-                Robofest 2024 is a state-level robotics competition where children can showcase their engineering, programming, and problem-solving skills through various challenges.
+                QBee Academy is hosting the event, providing educational opportunities in robotics and coding for young learners.
               </span>
             }
             className="transform transition-transform duration-200 hover:scale-105"
           />
           <Accordion
-            title="Who can participate in Robofest 2024?"
+            title="What is Bot Showcase?"
             answer={
               <span>
-                Robofest 2024 is open to children and teens of all skill levels who are interested in robotics and coding.
+                Bot Showcase is an event where kids aged 7-15 can participate in hands-on bot building activities and challenges, demonstrating their creativity and innovation in robotics.
               </span>
             }
             className="transform transition-transform duration-200 hover:scale-105"
           />
           <Accordion
-            title="What are the categories?"
+            title="What is Bot Assembling?"
             answer={
               <span>
-                The competition includes categories such as Line Following, Sumo Bots, RoboArts, and Game Challenges, each designed to test different aspects of robotics skills.
+                Bot Assembling is part of the event activities where kids will learn to assemble and build their own robots under guidance.
               </span>
             }
             className="transform transition-transform duration-200 hover:scale-105"
           />
           <Accordion
-            title="What is the schedule?"
+            title="What is Robo Race?"
             answer={
               <span>
-                Robofest 2024 will be held over several days with specific dates for registration, preliminary rounds, and the final competition. Please check our official website for detailed schedules.
+                Robo Race is a challenge game where participants compete in robotic races, showcasing their robot's speed and agility.
               </span>
             }
             className="transform transition-transform duration-200 hover:scale-105"
           />
           <Accordion
-            title="How can I register for Robofest 2024?"
+            title="What is RoboFest 2024?"
             answer={
               <span>
-                Participants can register for Robofest 2024 through our official website. Registration details and deadlines will be provided there.
+                RoboFest 2024 is a robotics competition offering various activities like bot building, RoboRace, expert talks, and showcasing innovative projects.
               </span>
             }
             className="transform transition-transform duration-200 hover:scale-105"
           />
           <Accordion
-            title="What are the rules for Robofest 2024?"
+            title="What activities are included?"
             answer={
               <span>
-                The rules for each category of Robofest 2024 can be found on our website. Participants are encouraged to review the rules thoroughly to ensure compliance.
+                The event includes a Bot Building Workshop, RoboRace Challenge Game, Bot Showcase, Expert Talk on Robotics Education, and an overview of QBee Academy's Robotics Courses.
               </span>
             }
             className="transform transition-transform duration-200 hover:scale-105"
           />
           <Accordion
-            title="What resources are available?"
+            title="What are the special offers for participants?"
             answer={
               <span>
-                We provide various resources including tutorials, past competition videos, and practice challenges on our website to help participants prepare for Robofest 2024.
+                Participants can avail discounts on robotics courses, complimentary tablet, competition participation, smartwatch, and workshops based on enrollment levels.
               </span>
             }
             className="transform transition-transform duration-200 hover:scale-105"
           />
           <Accordion
-            title="Where will Robofest 2024 be held?"
+            title="How do I register for RoboFest 2024?"
             answer={
               <span>
-                The location for Robofest 2024 will be announced on our official website. It will be held at a venue that can accommodate the different challenges and participants comfortably.
+                Registration can be done online through the QBee Academy website. Registrants will need to pay a registration fee of Rs. 99 to secure their spot.
               </span>
             }
             className="transform transition-transform duration-200 hover:scale-105"
           />
           <Accordion
-            title="What should I bring to Robofest 2024?"
+            title="What should I bring to the event?"
             answer={
               <span>
-                Participants should bring their robots, necessary tools, chargers, and any other equipment specified in the competition rules. Details will be provided upon registration.
+                Participants should bring their robots, necessary tools, chargers, and any specified equipment as per the competition rules.
               </span>
             }
             className="transform transition-transform duration-200 hover:scale-105"
           />
           <Accordion
-            title="How are winners determined?"
+            title="How are winners determined at RoboFest 2024?"
             answer={
               <span>
-                Winners are determined based on their performance in the various challenges. Judging criteria include design, functionality, programming, and overall problem-solving skills.
+                Winners will be chosen based on their performance in various challenges, judged on design, functionality, programming, and problem-solving skills.
               </span>
             }
             className="transform transition-transform duration-200 hover:scale-105"

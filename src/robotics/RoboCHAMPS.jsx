@@ -41,7 +41,11 @@ const Card = ({ imgSrc, alt, title, description }) => {
     <div className="bg-white p-6 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105">
       <div className="flex flex-col md:flex-row md:items-center">
         <div className="md:w-1/3 mb-4 md:mb-0">
-          <img src={imgSrc} alt={alt} className="w-48 h-48 object-cover rounded-full mx-auto md:mx-0" />
+          <img
+            src={imgSrc}
+            alt={alt}
+            className="w-full md:w-48 h-auto object-cover mx-auto md:mx-0"
+          />
         </div>
         <div className="md:w-2/3 md:pl-8">
           <div className="text-2xl font-bold mb-2">{title}</div>
