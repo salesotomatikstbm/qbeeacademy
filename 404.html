@@ -1,60 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>404 - Page Not Found</title>
-  <style>
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
-      color: #333;
-      text-align: center;
-    }
-    .container {
-      max-width: 600px;
-      padding: 20px;
-      background: white;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
-    p {
-      font-size: 1.25rem;
-      margin-bottom: 20px;
-    }
-    .countdown {
-      font-weight: bold;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1>404 - Page Not Found</h1>
-    <h1>QBee Academy</h1>
-    <p>Sorry, the page you are looking for does not exist. You will be redirected to the homepage in <span class="countdown">5</span> seconds.</p>
-  </div>
-  <script>
-    // Countdown and redirect
-    let countdownElement = document.querySelector('.countdown');
-    let countdown = 5;
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Single Page Apps for GitHub Pages QBee Academy</title>
+    <script type="text/javascript">
+      var pathSegmentsToKeep = 0;
 
-    function updateCountdown() {
-      countdown--;
-      countdownElement.textContent = countdown;
-      if (countdown === 0) {
-        window.location.href = "/";
-      }
-    }
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
+        l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
+      );
 
-    setInterval(updateCountdown, 1000);
-  </script>
-</body>
+    </script>
+  </head>
+  <body>
+  </body>
 </html>
