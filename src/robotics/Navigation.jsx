@@ -47,14 +47,18 @@ const Navigation = () => {
       <div>
         <img src={Logo} alt="Logo" className="w-48 h-auto" />
       </div>
-      <div className="hidden md:flex space-x-6">
+      <div className="hidden md:flex space-x-6 items-center">
         <NavLink to="home" onClick={toggleMenu} activeLink={activeLink} offset={offsetValue}>Home</NavLink>
         <NavLink to="robofest" onClick={toggleMenu} activeLink={activeLink} offset={offsetValue}>RoboFest 2024</NavLink>
         <NavLink to="courses" onClick={toggleMenu} activeLink={activeLink} offset={offsetValue}>Our Courses</NavLink>
         <NavLink to="why-robotics" onClick={toggleMenu} activeLink={activeLink} offset={offsetValue}>Why Robotics</NavLink>
         <NavLink to="workshops" onClick={toggleMenu} activeLink={activeLink} offset={offsetValue}>Our Workshops</NavLink>
-        <NavLink to="contact" onClick={toggleMenu} activeLink={activeLink} offset={offsetValue}>Contact</NavLink>
-        <button onClick={handleSoftwareClick} className="hover:underline text-white py-2 px-4 block md:inline-block cursor-pointer">Software</button>
+        <button onClick={handleSoftwareClick} className="hover:underline text-white py-2 px-4 cursor-pointer">Software</button>
+        <NavLink to="contact" onClick={toggleMenu} activeLink={activeLink} offset={offsetValue}>
+          <button className="bg-primary text-white px-6 py-2 rounded-full">
+            Contact Us
+          </button>
+        </NavLink>
       </div>
       <div className="md:hidden">
         <button onClick={toggleMenu} className="text-white">
@@ -68,8 +72,12 @@ const Navigation = () => {
           <NavLink to="courses" onClick={toggleMenu} activeLink={activeLink} offset={offsetValue}>Our Courses</NavLink>
           <NavLink to="why-robotics" onClick={toggleMenu} activeLink={activeLink} offset={offsetValue}>Why Robotics</NavLink>
           <NavLink to="workshops" onClick={toggleMenu} activeLink={activeLink} offset={offsetValue}>Our Workshops</NavLink>
-          <NavLink to="contact" onClick={toggleMenu} activeLink={activeLink} offset={offsetValue}>Contact</NavLink>
-          <button onClick={handleSoftwareClick} className="hover:underline text-white py-2 px-4 block md:inline-block cursor-pointer">Software</button>
+          <button onClick={handleSoftwareClick} className="hover:underline text-white py-2 px-4 cursor-pointer">Software</button>
+          <NavLink to="contact" onClick={toggleMenu} activeLink={activeLink} offset={offsetValue}>
+            <button className="bg-primary text-white px-6 py-2 rounded-full">
+              Contact Us
+            </button>
+          </NavLink>
         </div>
       )}
     </nav>

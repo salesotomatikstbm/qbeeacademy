@@ -79,7 +79,8 @@ const Navbar = () => {
                 location.pathname === "/robotics" ? "text-blue-500" : ""
               }`}
             >
-              Robotics
+              Tech-Champions
+
             </Link>
           </li>
         </ul>
@@ -147,7 +148,7 @@ const Navbar = () => {
             }`}
             onClick={handleMenuToggle}
           >
-            Robotics
+          Tech-Champions
           </Link>
         </li>
         {/* Button component on mobile */}

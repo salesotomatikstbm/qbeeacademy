@@ -72,13 +72,13 @@ const RoboFest2024 = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full md:w-1/2 flex justify-center md:justify-end mt-14 md:mt-0">
+            {/* <div className="w-full md:w-1/2 flex justify-center md:justify-end mt-30 md:mt-0">
               <img
                 src={headerBlob}
                 alt="Tech Illustration"
                 className="w-full md:w-4/5 lg:w-3/4 xl:w-2/3"
               />
-            </div>
+            </div> */}
             <div className="text-center py-8">
               <a
                 href="https://pages.razorpay.com/pl_OOcuhQQsCTdtaA/view"

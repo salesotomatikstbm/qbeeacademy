@@ -27,7 +27,11 @@ const Robotics = () => {
       <div id="robofest" className="relative z-0">
         <RoboFest_2024 />
       </div>
-      <EventDetails />
+
+      
+      <EventSection />
+      
+
       <div id="courses">
         <PopularCourses />
         <Course />
@@ -46,9 +50,9 @@ const Robotics = () => {
         <FAQ />
       </div>
 
+      <EventDetails />
 
-
-      <EventSection />
+   
 
 
       
