@@ -1,6 +1,6 @@
 import React from 'react';
 import Robo_Head_Content from './Robo_Head_Content';
-import event from '../assets/event.png';
+
 
 const RoboFest2024 = () => {
   return (

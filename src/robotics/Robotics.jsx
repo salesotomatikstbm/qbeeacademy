@@ -1,67 +1,74 @@
-import React, { useState, useEffect } from 'react';
-import Head from './Head';
-import Course from './Course';
-import Navigation from './Navigation';
-import RoboFest_2024 from './RoboFest_2024';
-import FAQ from './FAQ';
-import RoboCHAMPS from './RoboCHAMPS';
-import Course1 from './Course1';
-import Footer1 from './Footer1';
-import PreviousWorkshopVideos from './PreviousWorkshopVideos';
-import PopularCourses from './PopularCourses';
-import EventSection from './EventSection';
-import EventDetails from './EventDetails';
-import ContactForm from './ContactForm';
+import Top from './Head/Top';
+import Course from './Course/Course';
+import Navigation from './Head/Navigation';
+import RoboFest2024 from './Middle/RoboFest_2024'; // Ensure the file exists
+import FAQ from './Foot/FAQ';
+import RoboCHAMPS from './Middle/RoboCHAMPS';
+import Course1 from './Course/Course1';
+import Footer1 from './Foot/Footer1';
+import PreviousWorkshopVideos from './Course/PreviousWorkshopVideos';
+import PopularCourses from './Course/PopularCourses';
+import EventSection from './Offer/EventSection';
+import EventDetails from './Offer/EventDetails';
+import ContactForm from './Foot/ContactForm';
+import { InfiniteMovingCardsDemo } from './ui/InfiniteMovingCardsDemo';
+
+
+
 
 const Robotics = () => {
-
-
   return (
     <div>
       <div>
         <Navigation />
       </div>
-     
+
       <div id="home" className="bg-purple-800 pt-20 relative">
-        <Head />
-      </div>   
-      <div id="robofest" className="relative z-0">
-        <RoboFest_2024 />
+        <Top />
       </div>
 
-      
-      <EventSection />
-      
+      <div id="robofest" className="relative z-0">
+        <RoboFest2024 />
+      </div>
+
+      <div>
+        <EventSection />
+      </div>
 
       <div id="courses">
         <PopularCourses />
         <Course />
         <Course1 />
       </div>
-      
+
       <div id="why-robotics">
         <RoboCHAMPS />
       </div>
-      
+
       <div id="workshops">
         <PreviousWorkshopVideos />
       </div>
-      
+
       <div id="faq">
         <FAQ />
       </div>
 
-      <EventDetails />
-<div id="contact">
-<ContactForm />
+      <div>
+        <EventDetails />
+      </div>
 
-</div>
- 
+      <div id="contact">
+        <ContactForm />
+      </div>
 
-      
-      <div >
+      <div>
         <Footer1 />
       </div>
+
+
+{/* <InfiniteMovingCardsDemo /> */}
+
+
     </div>
   );
 };

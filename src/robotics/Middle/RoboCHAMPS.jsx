@@ -1,7 +1,7 @@
 import React from 'react';
-import Skill from '../assets/Skill.png';
-import Future from '../assets/Future.png';
-import Coding from '../assets/Coding.png';
+import Skill from '../../assets/Skill.png';
+import Future from '../../assets/Future.png';
+import Coding from '../../assets/Coding.png';
 
 const RoboCHAMPS = () => {
   return (

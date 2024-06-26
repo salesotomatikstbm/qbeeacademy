@@ -2,9 +2,9 @@ import React, { useState, useEffect, useRef } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import Course_1 from '../assets/Course_1.png';
-import Course_2 from '../assets/Course_9.png';
-import Course_3 from '../assets/Course_8.png';
+import Course_1 from '../../assets/Course_1.png';
+import Course_2 from '../../assets/Course_9.png';
+import Course_3 from '../../assets/Course_8.png';
 
 const PopularCourses = () => {
   const courses = [

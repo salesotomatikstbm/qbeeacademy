@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import { useLocation, useNavigate } from 'react-router-dom';
-import Logo from '../assets/Logo.png';
+import Logo from '../../assets/Logo.png';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);

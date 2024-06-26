@@ -1,8 +1,8 @@
 import React from 'react';
-import headerBlob from '../assets/robotics.png';
+import headerBlob from '../../assets/robotics.png';
 import LandingSection from './LandingSection';
 
-const Head = () => {
+const Top = () => {
   return (
     <div className="bg-blue-800 p-4 w-full mx-auto h-300" style={{ fontFamily: 'Open Sans, sans-serif' }}>
       <div className="flex flex-col md:flex-row items-center justify-between max-w-screen-xl mx-auto">
@@ -27,4 +27,4 @@ const Head = () => {
   );
 };
 
-export default Head;
+export default Top;

@@ -1,5 +1,5 @@
 import React from 'react';
-import Oto from '../assets/Oto.png';
+import Oto from '../../assets/Oto.png';
 
 const LandingSection = () => {
   return (

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import tabletImage from '../assets/tabletImage.png'; 
-import smartwatchImage from '../assets/smartwatchImage.png'; 
-import bootcampImage from '../assets/bootcampImage.png'; 
-import competitionImage from '../assets/competitionImage.png'; 
+import tabletImage from '../../assets/tabletImage.png'; 
+import smartwatchImage from '../../assets/smartwatchImage.png'; 
+import bootcampImage from '../../assets/bootcampImage.png'; 
+import competitionImage from '../../assets/competitionImage.png'; 
 
 const BonusesSection = () => {
   const calculateTimeLeft = () => {
