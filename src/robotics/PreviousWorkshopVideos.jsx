@@ -67,7 +67,7 @@ const PreviousWorkshopVideos = () => {
               {videoType === "youtube" && (
                 <iframe
                   width="100%"
-                  height="200"
+                  height="300" // Adjusted height to be more square-shaped
                   src={video.link}
                   title={video.title}
                   frameBorder="0"
@@ -78,7 +78,7 @@ const PreviousWorkshopVideos = () => {
               {videoType === "map" && (
                 <iframe
                   width="100%"
-                  height="200"
+                  height="300" // Adjusted height to be more square-shaped
                   src={video.location}
                   title="Google Maps location"
                   frameBorder="0"
@@ -108,7 +108,7 @@ const PreviousWorkshopVideos = () => {
             <div className="aspect-w-16 aspect-h-9">
               <iframe
                 width="350"
-                height="450" // Adjusted height for larger iframe
+                height="300" // Adjusted height for larger iframe
                 src={currentVideo.replace("watch?v=", "embed/")}
                 title="YouTube video player"
                 frameBorder="0"
@@ -119,8 +119,8 @@ const PreviousWorkshopVideos = () => {
           )}
           {videoType === "map" && (
             <iframe
-              width="100%"
-              height="450"
+              width="80%"
+              height="50%"
               src={currentVideo}
               title="Google Maps location"
               frameBorder="0"

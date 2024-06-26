@@ -10,12 +10,12 @@ const LandingSection = () => {
           src={Oto}
           alt="Oto partner logo"
           loading="lazy"
-          className="h-16 md:h-24 w-auto mx-auto md:mx-0"
+          className="h-20 md:h-28 w-auto mx-auto md:mx-0"
         />
       </div>
       <a
         href="https://pages.razorpay.com/pl_OOcuhQQsCTdtaA/view"
-        className="inline-block bg-red-500 text-white py-3 px-6 rounded-lg text-lg font-medium text-center md:text-left hover:bg-green-600 transition duration-300"
+        className="inline-block bg-green-500 text-white py-3 px-6 rounded-lg text-lg font-medium text-center md:text-left hover:bg-green-600 transition duration-300"
         target="_blank"
         rel="noopener noreferrer"
       >

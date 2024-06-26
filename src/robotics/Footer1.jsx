@@ -14,12 +14,12 @@ const Footer1 = () => {
             <p className="text-gray-300">16/379 Mullai Nagar, 2nd Cross street</p>
             <p className="text-gray-300">West Tambaram, Tambaram, Chennai,</p>
             <p className="text-gray-300">Tamil Nadu 600 045</p>
-            <a href="tel:+918610210593" className="block mt-2 text-gray-300">
+            <a href="tel:+918610210593" className="block mt-2 text-gray-300 hover:text-white text-lg ">
               Mobile No: +91 86102 10593
             </a>
-            <a href="mailto:qbee.academy@gmail.com" className="block text-gray-300">
-        E-mail: qbee.academy@gmail.com
-      </a>
+            <a href="mailto:qbee.academy@gmail.com" className="block text-gray-300 hover:text-white text-lg ">
+              E-mail: qbee.academy@gmail.com
+            </a>
           </div>
           {/* Useful Links */}
           <div className="w-full md:w-1/2 lg:w-1/4 mb-4 lg:mb-0">

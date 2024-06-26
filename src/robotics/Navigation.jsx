@@ -67,7 +67,7 @@ const Navigation = () => {
         </button>
       </div>
       {isOpen && (
-        <div className="absolute top-20 left-0 w-full bg-purple-800 flex flex-col items-center md:hidden">
+        <div className="absolute top-20 left-0 w-full  bg-blue-800 flex flex-col items-center md:hidden">
           <NavLink to="home" onClick={toggleMenu} activeLink={activeLink} offset={offsetValue}>Home</NavLink>
           <NavLink to="robofest" onClick={toggleMenu} activeLink={activeLink} offset={offsetValue}>RoboFest 2024</NavLink>
           <NavLink to="courses" onClick={toggleMenu} activeLink={activeLink} offset={offsetValue}>Our Courses</NavLink>
