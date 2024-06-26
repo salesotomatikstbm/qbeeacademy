@@ -3,8 +3,8 @@ import Accordion from "./Accordion";
 
 const FAQ = () => {
   return (
-    <div className="p-4 mx-auto text-lg lg:text-xl">
-      <h1 className="text-center text-3xl lg:text-4xl font-bold mb-8">FAQ</h1>
+    <div className="p-4 mx-auto text-lg lg:text-xl " style={{ fontFamily: 'Open Sans, sans-serif' }}>
+      <h1 className="text-center text-3xl lg:text-4xl font-bold mb-8 text-blue-600">FAQ</h1>
       <div className="max-w-3xl mx-auto">
         <div className="grid gap-4">
           

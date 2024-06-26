@@ -77,9 +77,9 @@ const Course = () => {
   };
 
   return (
-    <div className="py-12">
+    <div className="py-12" style={{ fontFamily: 'Open Sans, sans-serif' }}>
       <section className="container mx-auto px-6 lg:px-24">
-        <h1 className="text-center text-4xl font-bold mb-8">Coding Courses</h1>
+        <h1 className="text-center text-4xl font-bold text-blue-600 mb-8">Coding Courses</h1>
 
         {isMobileView ? (
           <div

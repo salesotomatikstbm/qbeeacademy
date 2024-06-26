@@ -33,7 +33,7 @@ const Navbar = () => {
         <ul className="hidden md:flex items-center gap-8 font-poppins">
           <li>
             <Link
-              to="/"
+              to="/software"
               className={`py-7 px-3 inline-block ${
                 location.pathname === "/" ? "text-blue-500" : ""
               }`}
@@ -74,12 +74,12 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              to="/robotics"
+              to="/"
               className={`py-7 px-3 inline-block ${
                 location.pathname === "/robotics" ? "text-blue-500" : ""
               }`}
             >
-              Tech-Champions
+              Little-Champions
 
             </Link>
           </li>
@@ -97,9 +97,9 @@ const Navbar = () => {
       >
         <li>
           <Link
-            to="/"
+            to="/software"
             className={`block py-3 px-4 text-white ${
-              location.pathname === "/" ? "text-blue-500" : ""
+              location.pathname === "/software" ? "text-blue-500" : ""
             }`}
             onClick={handleMenuToggle}
           >
@@ -142,13 +142,13 @@ const Navbar = () => {
         </li>
         <li>
           <Link
-            to="/robotics"
+            to="/"
             className={`block py-3 px-4 text-white ${
-              location.pathname === "/robotics" ? "text-blue-500" : ""
+              location.pathname === "/" ? "text-blue-500" : ""
             }`}
             onClick={handleMenuToggle}
           >
-          Tech-Champions
+          Little-Champions
           </Link>
         </li>
         {/* Button component on mobile */}

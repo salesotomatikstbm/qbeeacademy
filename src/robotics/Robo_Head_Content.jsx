@@ -2,7 +2,7 @@ import React from 'react';
 
 const Robo_Head_Content = () => {
   return (
-    <div className="text-center mb-12">
+    <div className="text-center mb-12" style={{ fontFamily: 'Open Sans, sans-serif' }}>
       <h2 className="text-4xl font-bold text-[#202658] md:text-5xl lg:text-6xl mb-2">
         Celebrate with us at <span className="text-blue-600">RoboFest 2024!</span>
       </h2>

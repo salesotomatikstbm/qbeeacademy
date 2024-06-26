@@ -5,11 +5,11 @@ import Coding from '../assets/Coding.png';
 
 const RoboCHAMPS = () => {
   return (
-    <div className="py-12">
+    <div className="py-12" style={{ fontFamily: 'Open Sans, sans-serif' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <div className="text-3xl font-bold">Why children</div>
-          <div className="text-5xl font-extrabold">should learn to code</div>
+          <div className="text-5xl font-bold text-blue-600">Why children</div>
+          <div className="text-5xl font-extrabold text-blue-600">should learn to code</div>
         </div>
         <div className="grid grid-cols-1 gap-8 md:max-w-5xl md:mx-auto">
           <Card

@@ -3,7 +3,7 @@ import Oto from '../assets/Oto.png';
 
 const LandingSection = () => {
   return (
-    <div className="lg:col-span-7 md:col-span-7 p-6 bg-purple-800 flex flex-col md:flex-row items-center justify-between">
+    <div className="lg:col-span-7 md:col-span-7 p-6 bg-blue-800 flex flex-col md:flex-row items-center justify-between" style={{ fontFamily: 'Open Sans, sans-serif' }}>
       <div className="partner-data mb-6 md:mb-0 md:mr-6">
         <p className="text-white text-center md:text-left">Officially Authorized Partner of</p>
         <img
@@ -15,7 +15,7 @@ const LandingSection = () => {
       </div>
       <a
         href="https://pages.razorpay.com/pl_OOcuhQQsCTdtaA/view"
-        className="inline-block bg-green-500 text-white py-3 px-6 rounded-lg text-lg font-medium text-center md:text-left hover:bg-green-600 transition duration-300"
+        className="inline-block bg-red-500 text-white py-3 px-6 rounded-lg text-lg font-medium text-center md:text-left hover:bg-green-600 transition duration-300"
         target="_blank"
         rel="noopener noreferrer"
       >

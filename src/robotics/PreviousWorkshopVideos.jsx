@@ -58,8 +58,8 @@ const PreviousWorkshopVideos = () => {
   };
 
   return (
-    <section className="py-8">
-      <h2 className="text-4xl font-bold text-center mb-12 ">Previous Workshop Videos</h2>
+    <section className="py-8" style={{ fontFamily: 'Open Sans, sans-serif' }}>
+      <h2 className="text-4xl font-bold text-center mb-12 text-blue-600 ">Previous Workshop Videos</h2>
       <div className="flex flex-wrap justify-center">
         {videos.map((video, index) => (
           <div key={index} className="w-full sm:w-1/2 lg:w-1/3 px-3 mb-8 mx-4 flex items-center justify-center">

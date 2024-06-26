@@ -18,14 +18,23 @@ const EventDetails = () => {
   };
 
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+  const [isTimeUp, setIsTimeUp] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setTimeLeft(calculateTimeLeft());
+      const newTimeLeft = calculateTimeLeft();
+      setTimeLeft(newTimeLeft);
+      if (Object.keys(newTimeLeft).length === 0) {
+        setIsTimeUp(true);
+      }
     }, 1000);
 
     return () => clearTimeout(timer);
   });
+
+  if (isTimeUp) {
+    return null; // Hide the entire component when the time is up
+  }
 
   const timerComponents = [];
 
@@ -35,7 +44,7 @@ const EventDetails = () => {
     }
 
     timerComponents.push(
-      <div key={interval} className="text-center">
+      <div key={interval} className="text-center" style={{ fontFamily: 'Open Sans, sans-serif' }}>
         <div className="text-2xl md:text-4xl font-bold">{timeLeft[interval]}</div>
         <div className="text-sm md:text-lg">{interval.charAt(0).toUpperCase() + interval.slice(1)}</div>
       </div>
@@ -62,15 +71,13 @@ const EventDetails = () => {
         </h2>
       </div>
 
-     
-        <div className="w-full px-4 ">
-          <div className="mb-4 text-center">
-            <h2 className="text-xl md:text-2xl">
+      <div className="w-full px-4 ">
+        <div className="mb-4 text-center">
+          <h2 className="text-xl md:text-2xl">
             Registration Fees <span className="text-gray-500 line-through mr-2 md:mr-4">₹399</span> ₹99
-            </h2>
-          </div>
+          </h2>
         </div>
-      
+      </div>
 
       <div className="text-center">
         <a

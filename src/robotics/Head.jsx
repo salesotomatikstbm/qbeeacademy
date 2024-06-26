@@ -4,7 +4,7 @@ import LandingSection from './LandingSection';
 
 const Head = () => {
   return (
-    <div className="bg-purple-800 p-4 w-full mx-auto h-300">
+    <div className="bg-blue-800 p-4 w-full mx-auto h-300" style={{ fontFamily: 'Open Sans, sans-serif' }}>
       <div className="flex flex-col md:flex-row items-center justify-between max-w-screen-xl mx-auto">
         <div className="w-full md:w-1/2 text-center md:text-left">
           <h1 className="text-white text-6xl lg:text-5xl mb-6">

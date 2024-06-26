@@ -22,14 +22,23 @@ const BonusesSection = () => {
   };
 
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+  const [isTimeUp, setIsTimeUp] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setTimeLeft(calculateTimeLeft());
+      const newTimeLeft = calculateTimeLeft();
+      setTimeLeft(newTimeLeft);
+      if (Object.keys(newTimeLeft).length === 0) {
+        setIsTimeUp(true);
+      }
     }, 1000);
 
     return () => clearTimeout(timer);
   });
+
+  if (isTimeUp) {
+    return null; // Hide the entire component when the time is up
+  }
 
   const timerComponents = [];
 
@@ -47,43 +56,46 @@ const BonusesSection = () => {
 
   return (
     <div className="mx-3 md:mx-auto max-w-screen-lg">
-      
       <section className="bg-white p-6">
-      <p className="text-4xl font-bold text-[#202658] md:text-5xl lg:text-5xl mb-2 text-blue-600 text-center">
-        Gift for Spot Admission
+        <p className="text-4xl lg:text-5xl font-bold text-[#202658] text-blue-600 text-center mb-2">
+          Gift for Spot Admission
+        </p>
+        <p className="text-2xl lg:text-2xl font-bold text-[#202658] text-center mb-2">
+         Only One Offer Per Student 
         </p>
         <div className="container mx-auto flex flex-wrap">
           <div className="w-full md:w-1/2 p-4">
-            <div className=" p-6 rounded-lg text-center">
-              <h2 className="text-xl font-bold">
+            <div className="p-6 rounded-lg text-center">
+              <h2 className="text-xl lg:text-2xl font-bold text-[#202658]">
                 Choose 6 Levels of Robotics Courses
               </h2>
               <div className="my-4">
                 <img
-                  className="w-32 h-32 mx-auto" // Increased width and height
+                  className="w-40 h-40 mx-auto"
                   src={tabletImage}
                   alt="Tablet"
                 />
               </div>
-              <h3 className="text-lg font-semibold">
+              <h3 className="text-lg font-semibold text-[#202658]">
                 Includes a free tablet for each participant
               </h3>
               <p className="mt-2 text-md font-medium">Worth Rs 5,500</p>
+              
             </div>
           </div>
           <div className="w-full md:w-1/2 p-4">
-            <div className=" p-6 rounded-lg text-center">
-              <h2 className="text-xl font-bold">
+            <div className="p-6 rounded-lg text-center">
+              <h2 className="text-xl lg:text-2xl font-bold text-[#202658]">
                 Choose 3 Levels of Robotics Courses
               </h2>
               <div className="my-4">
                 <img
-                  className="w-32 h-32 mx-auto" // Increased width and height
+                  className="w-40 h-40 mx-auto"
                   src={smartwatchImage}
                   alt="Smartwatch"
                 />
               </div>
-              <h3 className="text-lg font-semibold">
+              <h3 className="text-lg font-semibold text-[#202658]">
                 Includes a free smartwatch for each participant
               </h3>
               <p className="mt-2 text-md font-medium">Worth Rs 3,500</p>
@@ -95,37 +107,37 @@ const BonusesSection = () => {
       <section className="bg-white p-6">
         <div className="container mx-auto flex flex-wrap">
           <div className="w-full md:w-1/2 p-4">
-            <div className=" p-6 rounded-lg text-center">
-              <h2 className="text-xl font-bold">
+            <div className="p-6 rounded-lg text-center">
+              <h2 className="text-xl lg:text-2xl font-bold text-[#202658]">
                 Choose 2 Levels of Robotics Courses
               </h2>
               <div className="my-4">
                 <img
-                  className="w-32 h-32 mx-auto" // Increased width and height
+                  className="w-40 h-40 mx-auto"
                   src={competitionImage}
                   alt="Bootcamp"
                 />
               </div>
-              <h3 className="text-lg font-semibold">
-                Enhance your skills with our complimentary bootcamp
+              <h3 className="text-lg font-semibold text-[#202658]">
+                Enhance your skills with our complimentary Industrial Visit
               </h3>
               <p className="mt-2 text-md font-medium">Worth Rs 2,000</p>
             </div>
           </div>
           <div className="w-full md:w-1/2 p-4">
-            <div className=" p-6 rounded-lg text-center">
-              <h2 className="text-xl font-bold">
-                Choose 1 Levels of Robotics Courses
+            <div className="p-6 rounded-lg text-center">
+              <h2 className="text-xl lg:text-2xl font-bold text-[#202658]">
+                Choose 1 Level of Robotics Courses
               </h2>
               <div className="my-4">
                 <img
-                  className="w-32 h-32 mx-auto" // Increased width and height
+                  className="w-40 h-40 mx-auto"
                   src={bootcampImage}
                   alt="Competition Participation"
                 />
               </div>
-              <h3 className="text-lg font-semibold">
-                Enhance your skills with our Complimentary Competition Participation
+              <h3 className="text-lg font-semibold text-[#202658]">
+              Enhance your skills with our complimentary Workshop
               </h3>
               <p className="mt-2 text-md font-medium">Worth Rs 1,000</p>
             </div>
@@ -134,13 +146,13 @@ const BonusesSection = () => {
       </section>
 
       <div className="container mx-auto text-center">
-        <h2 className="text-4xl font-bold text-[#202658] md:text-5xl lg:text-5xl mb-2 text-blue-600">
+        <h2 className="text-4xl lg:text-5xl font-bold text-[#202658] text-blue-600 mb-2">
           Register before 10th July 2024
         </h2>
-        <p className="font-bold text-[#202658] md:text-4xl lg:text-4xl mb-2">
+        <p className="font-bold text-[#202658] lg:text-4xl mb-2">
           To Unlock All Bonuses worth Rs 12,000
         </p>
-        <div className="font-bold text-[#202658] md:text-2xl lg:text-2xl mb-2 text-blue-600">
+        <div className="font-bold text-[#202658] lg:text-2xl mb-2 text-blue-600">
           {timerComponents.length ? timerComponents : <span>Time's up!</span>}
         </div>
         <a
@@ -152,10 +164,7 @@ const BonusesSection = () => {
           Register RoboFest 2024
           <i className="fa fa-chevron-right ml-2" aria-hidden="true"></i>
         </a>
-       
       </div>
-
-
     </div>
   );
 };

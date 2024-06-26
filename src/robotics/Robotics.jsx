@@ -11,6 +11,7 @@ import PreviousWorkshopVideos from './PreviousWorkshopVideos';
 import PopularCourses from './PopularCourses';
 import EventSection from './EventSection';
 import EventDetails from './EventDetails';
+import ContactForm from './ContactForm';
 
 const Robotics = () => {
 
@@ -51,12 +52,14 @@ const Robotics = () => {
       </div>
 
       <EventDetails />
+<div id="contact">
+<ContactForm />
 
-   
-
+</div>
+ 
 
       
-      <div id="contact">
+      <div >
         <Footer1 />
       </div>
     </div>

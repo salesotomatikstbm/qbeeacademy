@@ -32,7 +32,7 @@ const Navigation = () => {
 
   const handleSoftwareClick = () => {
     setIsOpen(false);
-    navigate('/');
+    navigate('/software');
   };
 
   const toggleMenu = () => {
@@ -43,7 +43,7 @@ const Navigation = () => {
   const offsetValue = -80;
 
   return (
-    <nav className="bg-purple-800 p-4 flex justify-between items-center h-20 fixed w-full z-10">
+    <nav className="bg-blue-800 p-4 flex justify-between items-center h-20 fixed w-full z-10">
       <div>
         <img src={Logo} alt="Logo" className="w-48 h-auto" />
       </div>
@@ -53,9 +53,10 @@ const Navigation = () => {
         <NavLink to="courses" onClick={toggleMenu} activeLink={activeLink} offset={offsetValue}>Our Courses</NavLink>
         <NavLink to="why-robotics" onClick={toggleMenu} activeLink={activeLink} offset={offsetValue}>Why Robotics</NavLink>
         <NavLink to="workshops" onClick={toggleMenu} activeLink={activeLink} offset={offsetValue}>Our Workshops</NavLink>
-        <button onClick={handleSoftwareClick} className="hover:underline text-white py-2 px-4 cursor-pointer">Software</button>
+        <button onClick={handleSoftwareClick} className="hover:underline text-white py-2 px-4 cursor-pointer font-sans text-lg">Tech-Champions
+        </button>
         <NavLink to="contact" onClick={toggleMenu} activeLink={activeLink} offset={offsetValue}>
-          <button className="bg-primary text-white px-6 py-2 rounded-full">
+          <button className="bg-green-600 text-white px-6 py-2 rounded-full text-lg ">
             Contact Us
           </button>
         </NavLink>
@@ -72,9 +73,9 @@ const Navigation = () => {
           <NavLink to="courses" onClick={toggleMenu} activeLink={activeLink} offset={offsetValue}>Our Courses</NavLink>
           <NavLink to="why-robotics" onClick={toggleMenu} activeLink={activeLink} offset={offsetValue}>Why Robotics</NavLink>
           <NavLink to="workshops" onClick={toggleMenu} activeLink={activeLink} offset={offsetValue}>Our Workshops</NavLink>
-          <button onClick={handleSoftwareClick} className="hover:underline text-white py-2 px-4 cursor-pointer">Software</button>
+          <button onClick={handleSoftwareClick} className="hover:underline text-white py-2 px-4 cursor-pointer font-sans text-lg">Tech-Champions</button>
           <NavLink to="contact" onClick={toggleMenu} activeLink={activeLink} offset={offsetValue}>
-            <button className="bg-primary text-white px-6 py-2 rounded-full">
+            <button className="bg-primary text-white px-6 py-2 rounded-full text-lg ">
               Contact Us
             </button>
           </NavLink>
@@ -92,7 +93,7 @@ const NavLink = ({ to, children, onClick, activeLink, offset }) => {
       duration={500}
       spy={true}
       activeClass={activeLink === to ? "font-bold" : ""}
-      className="hover:underline text-white py-2 px-4 block md:inline-block cursor-pointer"
+      className="hover:underline text-white py-2 px-4 block md:inline-block cursor-pointer font-sans text-lg"
       onClick={onClick}
       offset={offset}
     >

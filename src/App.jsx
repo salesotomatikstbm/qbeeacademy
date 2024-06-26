@@ -12,17 +12,17 @@ import Main from './pages/home/Main';
 
 const App = () => {
   const location = useLocation();
-  const hideNavbarAndFooter = location.pathname === '/robotics';
+  const hideNavbarAndFooter = location.pathname === '/';
 
   return (
     <div>
       {!hideNavbarAndFooter && <Navbar />}
       <Routes>
-        <Route path="/" element={<Main />} />
+        <Route path="/software" element={<Main />} />
         <Route path="/workshop" element={<Workshop />} />
         <Route path="/internship" element={<Internship />} />
         <Route path="/placement" element={<Placement />} />
-        <Route path="/robotics" element={<Robotics />} />
+        <Route path="/" element={<Robotics />} />
         <Route path="/courses/javafsd" element={<Javafsd />} />
         <Route path="/courses/pythonfsd" element={<Pythonfsd />} />
       </Routes>

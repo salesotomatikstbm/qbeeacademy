@@ -1,8 +1,10 @@
 import React from 'react';
 
 const Footer1 = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <footer className="bg-purple-800 text-white py-6">
+    <footer className="bg-blue-800 text-white py-6" style={{ fontFamily: 'Open Sans, sans-serif' }}>
       <div className="container mx-auto px-6">
         <div className="flex flex-wrap justify-between">
           {/* Contact Information */}
@@ -12,8 +14,12 @@ const Footer1 = () => {
             <p className="text-gray-300">16/379 Mullai Nagar, 2nd Cross street</p>
             <p className="text-gray-300">West Tambaram, Tambaram, Chennai,</p>
             <p className="text-gray-300">Tamil Nadu 600 045</p>
-            <p className="text-gray-300 mt-2">Mobile No: +91 86102 10593</p>
-            <p className="text-gray-300">E-mail: qbee.academy@gmail.com</p>
+            <a href="tel:+918610210593" className="block mt-2 text-gray-300">
+              Mobile No: +91 86102 10593
+            </a>
+            <a href="mailto:qbee.academy@gmail.com" className="block text-gray-300">
+        E-mail: qbee.academy@gmail.com
+      </a>
           </div>
           {/* Useful Links */}
           <div className="w-full md:w-1/2 lg:w-1/4 mb-4 lg:mb-0">
@@ -24,7 +30,6 @@ const Footer1 = () => {
               <li><a href="#courses" className="text-gray-300 hover:text-white">Our Courses</a></li>
               <li><a href="#why-robotics" className="text-gray-300 hover:text-white">Why Robotics</a></li>
               <li><a href="#workshops" className="text-gray-300 hover:text-white">Our Workshops</a></li>
-            
             </ul>
           </div>
           {/* Social Media and Copyright */}
@@ -48,9 +53,8 @@ const Footer1 = () => {
         <hr className="border-gray-700 my-6" />
         {/* Copyright */}
         <div className="text-center text-gray-400 text-sm">
-          <div className=" items-center mr-12">
-            <p className="text-center">&copy; 2024 QBee Academy. All rights reserved.</p>
-           
+          <div className="items-center mr-12">
+            <p className="text-center">&copy; {currentYear} QBee Academy. All rights reserved.</p>
           </div>
         </div>
       </div>

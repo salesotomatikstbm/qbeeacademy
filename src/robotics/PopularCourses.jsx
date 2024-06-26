@@ -39,28 +39,18 @@ const PopularCourses = () => {
 
   const [isMobileView, setIsMobileView] = useState(false);
   const sliderRef = useRef(null);
+  const [iframeUrl, setIframeUrl] = useState('');
 
   useEffect(() => {
-    // Function to check screen width and update state for mobile view
     const checkScreenWidth = () => {
-      if (window.innerWidth < 768) { // Adjust this breakpoint as needed
-        setIsMobileView(true);
-      } else {
-        setIsMobileView(false);
-      }
+      setIsMobileView(window.innerWidth < 768); // Adjust breakpoint as needed
     };
 
-    // Initial check when component mounts
     checkScreenWidth();
-
-    // Event listener for window resize
     window.addEventListener('resize', checkScreenWidth);
-
-    // Cleanup function for event listener
     return () => window.removeEventListener('resize', checkScreenWidth);
   }, []);
 
-  // Slick slider settings for mobile view
   const sliderSettings = {
     dots: true,
     infinite: true,
@@ -68,10 +58,9 @@ const PopularCourses = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 5000, // Change slide every 5 seconds
+    autoplaySpeed: 5000,
   };
 
-  // Handle touch and mouse events to pause and play the slider
   const handleTouchStart = () => {
     sliderRef.current.slickPause();
   };
@@ -80,10 +69,20 @@ const PopularCourses = () => {
     sliderRef.current.slickPlay();
   };
 
+  // Function to open link in iframe
+  const openIframe = (link) => {
+    setIframeUrl(link);
+  };
+
+  // Function to close iframe
+  const closeIframe = () => {
+    setIframeUrl('');
+  };
+
   return (
-    <div className="py-12">
+    <div className="py-12 font-sans" style={{ fontFamily: 'Open Sans, sans-serif' }}>
       <section className="container mx-auto px-6 lg:px-24">
-        <h1 className="text-center text-4xl font-bold mb-8">Popular Courses</h1>
+        <h1 className="text-center text-4xl font-bold mb-8 text-blue-600">Popular Courses</h1>
 
         {/* Mobile View (Slider) */}
         {isMobileView && (
@@ -95,18 +94,17 @@ const PopularCourses = () => {
                     <img src={course.src} alt={course.title} className="w-30 h-auto mx-auto" />
                   </div>
                   <div className="p-4">
-                    <h3 className="text-lg font-bold mb-2">{course.title}</h3>
+                    <h3 className="text-lg font-bold mb-2 text-blue-600">{course.title}</h3>
                     <div className="flex justify-between text-gray-600 text-sm mb-2">
                       <span>{course.age}</span>
                       <span>{course.modules}</span>
                       <span>{course.duration}</span>
                     </div>
-                    
                     <p className="text-gray-700">{course.description}</p>
                     <div className="flex justify-end mb-4">
-                      <a href={course.link} target="_blank" rel="noopener noreferrer" className="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300">
+                      <button onClick={() => openIframe(course.link)} className="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300">
                         Learn More
-                      </a>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -124,22 +122,35 @@ const PopularCourses = () => {
                   <img src={course.src} alt={course.title} className="w-30 h-auto mx-auto" />
                 </div>
                 <div className="p-4">
-                  <h3 className="text-lg font-bold mb-2">{course.title}</h3>
+                  <h3 className="text-lg font-bold mb-2 text-blue-600">{course.title}</h3>
                   <div className="flex justify-between text-gray-600 text-sm mb-2">
                     <span>{course.age}</span>
                     <span>{course.modules}</span>
                     <span>{course.duration}</span>
                   </div>
-                  
                   <p className="text-gray-700">{course.description}</p>
                   <div className="flex justify-end mb-4">
-                    <a href={course.link} target="_blank" rel="noopener noreferrer" className="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300">
+                    <button onClick={() => openIframe(course.link)} className="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300">
                       Learn More
-                    </a>
+                    </button>
                   </div>
                 </div>
               </div>
             ))}
+          </div>
+        )}
+
+        {/* Iframe Modal */}
+        {iframeUrl && (
+          <div className="fixed inset-0 z-50 overflow-auto bg-gray-800 bg-opacity-75 flex">
+            <div className="relative p-8 bg-white max-w-3xl mx-auto my-auto rounded-lg shadow-lg">
+              <button onClick={closeIframe} className="absolute top-2 right-2 text-gray-600 hover:text-gray-900">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+              <iframe src={iframeUrl} className="w-full h-96" title="Course Content"></iframe>
+            </div>
           </div>
         )}
       </section>

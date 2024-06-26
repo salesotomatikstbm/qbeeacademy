@@ -8,7 +8,7 @@ const Accordion = ({ title, answer }) => {
   };
 
   return (
-    <div className="py-2">
+    <div className="py-2" style={{ fontFamily: 'Open Sans, sans-serif' }}>
       <button
         onClick={toggleAccordion}
         className="flex justify-between w-full items-center py-2 px-4 bg-gray-200 rounded-lg hover:bg-gray-300 focus:outline-none focus:bg-gray-300"
