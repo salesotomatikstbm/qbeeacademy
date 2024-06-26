@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.7c8b9283.css",
-    "main.js": "/static/js/main.6e71df09.js",
+    "main.css": "/static/css/main.ca529a8e.css",
+    "main.js": "/static/js/main.e4394519.js",
     "static/media/robotics.png": "/static/media/robotics.f3e4864ff73d6a93a0ea.png",
     "static/media/Course_9.png": "/static/media/Course_9.84b66b7118791293460e.png",
     "static/media/Course_2.png": "/static/media/Course_2.2aeefabddcdb4f6bb9ac.png",
@@ -16,17 +16,16 @@
     "static/media/Course_10.png": "/static/media/Course_10.f6d3b00b09422aca79e6.png",
     "static/media/Course_12.png": "/static/media/Course_12.9a070e40801bbd2cb618.png",
     "static/media/Course_7.png": "/static/media/Course_7.c5a91e917bfad4146acb.png",
-    "static/media/bot.png": "/static/media/bot.7aef9b4e00469f8b181f.png",
-    "static/media/event.png": "/static/media/event.65c4e7bf0bc6de50a361.png",
     "static/media/Course_6.png": "/static/media/Course_6.daa96c41a93b8ce35452.png",
+    "static/media/event.png": "/static/media/event.2dbc77a572e178a2fcae.png",
     "static/media/Coding.png": "/static/media/Coding.96dc014af64b8b4ae420.png",
-    "static/media/competitionImage.png": "/static/media/competitionImage.311033366056219b5c96.png",
-    "static/media/bootcampImage.png": "/static/media/bootcampImage.42067c2c63196036f6bb.png",
-    "static/media/Skill.png": "/static/media/Skill.722b8acffce63fc643e2.png",
-    "static/media/Future.png": "/static/media/Future.0661309753cb7a1cbb49.png",
+    "static/media/bootcampImage.png": "/static/media/bootcampImage.c50a7575169ad163ef84.png",
+    "static/media/Future.png": "/static/media/Future.5f5bdc3703d13f32b710.png",
+    "static/media/competitionImage.png": "/static/media/competitionImage.e3d3c7c3c3fdcab78b9f.png",
     "static/media/smartwatchImage.png": "/static/media/smartwatchImage.7ac1b2ad01d7f84e5b4b.png",
     "static/media/Oto.png": "/static/media/Oto.c5ef34f47b42ddc300e5.png",
-    "static/media/tabletImage.png": "/static/media/tabletImage.a30fa5a7ec47a6e2c4ec.png",
+    "static/media/Skill.png": "/static/media/Skill.4a095e1f911676893d86.png",
+    "static/media/tabletImage.png": "/static/media/tabletImage.53a255e39318344f1e30.png",
     "static/media/main.png": "/static/media/main.61ae90562535f0842140.png",
     "static/media/Java.png": "/static/media/Java.231b03d08a04e30fac35.png",
     "static/media/logo_1.png": "/static/media/logo_1.79e960efed2ab41f9ec1.png",
@@ -40,16 +39,16 @@
     "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
-    "static/media/send.svg": "/static/media/send.fec1bcd836edbf28bd264fd5ba0ad61a.svg",
     "index.html": "/index.html",
+    "static/media/send.svg": "/static/media/send.fec1bcd836edbf28bd264fd5ba0ad61a.svg",
     "static/media/downlode.svg": "/static/media/downlode.0f7d6b0a5374ba13e3be6a06b5fd24a2.svg",
     "static/media/plus.svg": "/static/media/plus.17a68b59f0f0e088dab0de6fecd891b8.svg",
     "static/media/one.svg": "/static/media/one.3a2760321d5bf60b4489cfd857f182ac.svg",
-    "main.7c8b9283.css.map": "/static/css/main.7c8b9283.css.map",
-    "main.6e71df09.js.map": "/static/js/main.6e71df09.js.map"
+    "main.ca529a8e.css.map": "/static/css/main.ca529a8e.css.map",
+    "main.e4394519.js.map": "/static/js/main.e4394519.js.map"
   },
   "entrypoints": [
-    "static/css/main.7c8b9283.css",
-    "static/js/main.6e71df09.js"
+    "static/css/main.ca529a8e.css",
+    "static/js/main.e4394519.js"
   ]
 }
