@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.73939852.css",
-    "main.js": "/static/js/main.f0d9418e.js",
+    "main.css": "/static/css/main.0b0d7850.css",
+    "main.js": "/static/js/main.c0594e39.js",
     "static/media/robotics.png": "/static/media/robotics.f3e4864ff73d6a93a0ea.png",
     "static/media/Course_9.png": "/static/media/Course_9.84b66b7118791293460e.png",
     "static/media/Course_2.png": "/static/media/Course_2.2aeefabddcdb4f6bb9ac.png",
@@ -17,7 +17,6 @@
     "static/media/Course_12.png": "/static/media/Course_12.9a070e40801bbd2cb618.png",
     "static/media/Course_7.png": "/static/media/Course_7.c5a91e917bfad4146acb.png",
     "static/media/Course_6.png": "/static/media/Course_6.daa96c41a93b8ce35452.png",
-    "static/media/event.png": "/static/media/event.2dbc77a572e178a2fcae.png",
     "static/media/Coding.png": "/static/media/Coding.96dc014af64b8b4ae420.png",
     "static/media/bootcampImage.png": "/static/media/bootcampImage.c50a7575169ad163ef84.png",
     "static/media/Future.png": "/static/media/Future.5f5bdc3703d13f32b710.png",
@@ -44,11 +43,11 @@
     "static/media/downlode.svg": "/static/media/downlode.0f7d6b0a5374ba13e3be6a06b5fd24a2.svg",
     "static/media/plus.svg": "/static/media/plus.17a68b59f0f0e088dab0de6fecd891b8.svg",
     "static/media/one.svg": "/static/media/one.3a2760321d5bf60b4489cfd857f182ac.svg",
-    "main.73939852.css.map": "/static/css/main.73939852.css.map",
-    "main.f0d9418e.js.map": "/static/js/main.f0d9418e.js.map"
+    "main.0b0d7850.css.map": "/static/css/main.0b0d7850.css.map",
+    "main.c0594e39.js.map": "/static/js/main.c0594e39.js.map"
   },
   "entrypoints": [
-    "static/css/main.73939852.css",
-    "static/js/main.f0d9418e.js"
+    "static/css/main.0b0d7850.css",
+    "static/js/main.c0594e39.js"
   ]
 }
