@@ -1,10 +1,18 @@
 import React from 'react';
 import headerBlob from '../../assets/robotics.png';
 import LandingSection from './LandingSection';
+import { Helmet } from 'react-helmet';
 
 const Top = () => {
   return (
     <div className="bg-blue-800 p-4 w-full mx-auto h-300" style={{ fontFamily: 'Open Sans, sans-serif' }}>
+<Helmet>
+        <title>Qbee Academy</title>
+        <meta name="description" content="Welcome to Qbee Academy's Robotics Home. Learn about our latest courses and events." />
+        <meta name="keywords" content="Robotics, Qbee Academy, Robotics Courses, RoboFest 2024" />
+      </Helmet>
+
+
       <div className="flex flex-col md:flex-row items-center justify-between max-w-screen-xl mx-auto">
         <div className="w-full md:w-1/2 text-center md:text-left">
           <h1 className="text-white text-6xl lg:text-5xl mb-6">

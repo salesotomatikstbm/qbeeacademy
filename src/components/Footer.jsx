@@ -1,5 +1,7 @@
 import React from "react";
 import logo from '../assets/logo_1.png'
+import { Helmet } from 'react-helmet';
+
 const Footer = () => {
   return (
     <div
@@ -11,6 +13,12 @@ const Footer = () => {
         color: "white", 
       }}
     >
+
+<Helmet>
+        <title>Qbee Academy</title>
+        <meta name="description" content="Footer section with links to Qbee Academy's social media and other important pages." />
+      </Helmet>
+
       <div className="max-w-[1160px] m-auto w-full">
         <div className="flex flex-col gap-8 md:flex-row md:justify-between md:gap-[50px]">
           <div className="flex flex-col gap-3 max-w-[462px] md:max-w-[264px] lg:max-w-[462px]">

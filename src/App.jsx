@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 import Navbar from './components/Navbar/Navbar';
 import Workshop from './pages/workshop/Workshop';
 import Internship from './pages/internship/Internship';
@@ -16,6 +17,11 @@ const App = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>Qbee Academy</title>
+        <meta name="description" content="Qbee Academy offers courses, workshops, internships, and placement opportunities in robotics, software development, and more." />
+        <meta name="keywords" content="Qbee Academy, robotics, software development, workshops, internships, placements, Java, Python" />
+      </Helmet>
       {!hideNavbarAndFooter && <Navbar />}
       <Routes>
         <Route path="/software" element={<Main />} />

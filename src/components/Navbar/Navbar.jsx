@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import Logo from "../../assets/Logo.png";
 import Button from "./Button";
 import NavLinks from "./NavLinks";
+import { Helmet } from 'react-helmet';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -21,6 +22,12 @@ const Navbar = () => {
         color: "white",
       }}
     >
+
+<Helmet>
+        <title>Navbar - Qbee Academy</title>
+        <meta name="description" content="Navigate through Qbee Academy's various sections including courses, workshops, internships, and placements." />
+      </Helmet>
+
       <div className="w-full flex items-center justify-between px-5">
         <Link to="/" className="h-20 flex items-center">
           <img src={Logo} alt="logo" className="w-48 h-auto" />

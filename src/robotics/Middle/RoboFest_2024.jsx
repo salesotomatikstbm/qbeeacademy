@@ -1,10 +1,18 @@
 import React from 'react';
 import Robo_Head_Content from './Robo_Head_Content';
+import { Helmet } from 'react-helmet';
 
 
 const RoboFest2024 = () => {
   return (
     <div className="px-6 py-14 md:px-10 md:py-16 lg:pb-12 bg-gray-100" style={{ fontFamily: 'Open Sans, sans-serif' }}>
+ <Helmet>
+        <title>RoboFest 2024 - Qbee Academy</title>
+        <meta name="description" content="Join us at RoboFest 2024 for an exciting robotics competition and workshops." />
+        <meta name="keywords" content="RoboFest 2024, Robotics Competition, Robotics Workshops" />
+      </Helmet>
+
+
       <Robo_Head_Content />
 
       <div className="flex flex-col lg:flex-row lg:gap-16">

@@ -10,6 +10,7 @@ import plus from '../../assets/plus.svg';
 import Dream from '../../assets/Dream.png';
 import CurriculumSection from './CurriculumSection';
 import ProjectsSection from './ProjectsSection';
+import { Helmet } from 'react-helmet';
 
 const Javafsd = () => {
   const [expandedSection, setExpandedSection] = useState(null);
@@ -20,6 +21,12 @@ const Javafsd = () => {
 
   return (
     <div>
+
+<Helmet>
+        <title>Java Full-Stack Development Course - Qbee Academy</title>
+        <meta name="description" content="Enroll in our Java Full-Stack Development course to become a proficient Java developer." />
+        <meta name="keywords" content="Qbee Academy, Java Full-Stack Development, Java course, software development" />
+      </Helmet>
       <div className="px-6 pt-14 mt-24 pb-[124px] bg-gradient-to-br from-[#100D25] via-[#100D25] to-[#190B69] sm:px-10 sm:pt-12 sm:pb-[160px] min-[1200px]:px-[140px] min-[1200px]:pt-16 min-[1200px]:pb-[174px]">
         <div className="relative max-w-[1160px] m-auto w-full flex flex-col justify-center items-center gap-8 sm:flex-row">
           <div className="text-white flex flex-col justify-center items-center sm:items-start sm:gap-0 min-[1200px]:max-w-[632px]">

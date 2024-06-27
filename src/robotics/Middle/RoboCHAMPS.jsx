@@ -2,10 +2,17 @@ import React from 'react';
 import Skill from '../../assets/Skill.png';
 import Future from '../../assets/Future.png';
 import Coding from '../../assets/Coding.png';
+import { Helmet } from 'react-helmet';
 
 const RoboCHAMPS = () => {
   return (
     <div className="py-12" style={{ fontFamily: 'Open Sans, sans-serif' }}>
+ <Helmet>
+        <title>RoboFest 2024 - Qbee Academy</title>
+        <meta name="description" content="Discover the champions of robotics at Qbee Academy. Learn from the best and become a RoboCHAMP." />
+        <meta name="keywords" content="RoboCHAMPS, Robotics Champions, Qbee Academy" />
+      </Helmet>
+      
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <div className="text-5xl font-bold text-blue-600">Why children</div>
