@@ -3,4 +3,4 @@ Disallow: /private/
 Disallow: /admin/
 Allow: /
 
-Sitemap: http://qbeeacademy.in/sitemap.xml
+Sitemap: https://qbeeacademy.in/sitemap.xml
