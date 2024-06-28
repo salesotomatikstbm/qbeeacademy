@@ -1,7 +1,7 @@
 import Top from './Head/Top';
 import Course from './Course/Course';
 import Navigation from './Head/Navigation';
-import RoboFest2024 from './Middle/RoboFest_2024'; 
+import RoboFest2024 from './Middle/RoboFest_2024';
 import FAQ from './Foot/FAQ';
 import RoboCHAMPS from './Middle/RoboCHAMPS';
 import Course1 from './Course/Course1';
@@ -11,6 +11,7 @@ import PopularCourses from './Course/PopularCourses';
 import EventSection from './Offer/EventSection';
 import EventDetails from './Offer/EventDetails';
 import ContactForm from './Foot/ContactForm';
+import Check from './Offer/Check';
 
 
 const Robotics = () => {
@@ -48,6 +49,9 @@ const Robotics = () => {
 
       <div id="faq">
         <FAQ />
+      </div>
+      <div>
+        <Check />
       </div>
 
       <div>

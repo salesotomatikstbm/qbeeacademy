@@ -9,7 +9,8 @@ const RoboFest2024 = () => {
  <Helmet>
         <title>RoboFest 2024 - Qbee Academy</title>
         <meta name="description" content="Join us at RoboFest 2024 for an exciting robotics competition and workshops." />
-        <meta name="keywords" content="RoboFest 2024, Robotics Competition, Robotics Workshops" />
+       <meta name="keywords" content="RoboFest 2024, Robotics Competition, Robotics Workshops, STEM education, robotics event, robotics learning, technology competition, engineering workshops, otomatics, otomatics tambaram, qbee, qbee chennai, qbee academy Tambaram" />
+ 
       </Helmet>
 
 

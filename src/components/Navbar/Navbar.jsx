@@ -98,10 +98,11 @@ const Navbar = () => {
       </div>
       {/* Mobile nav */}
       <ul
-        className={`md:hidden bg-blue-500 fixed w-full top-20 left-0 ${
-          open ? "block" : "hidden"
-        }`}
-      >
+          className={`
+            md:hidden bg-blue-500 fixed w-full top-0 overflow-y-auto bottom-0 py-24 pl-4
+            duration-500 z-50 ${open ? "left-0" : "left-[-100%]"}
+          `}
+        >
         <li>
           <Link
             to="/software"
