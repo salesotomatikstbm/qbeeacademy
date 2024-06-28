@@ -6,7 +6,7 @@ import competitionImage from '../../assets/competitionImage.png';
 
 const BonusesSection = () => {
   const calculateTimeLeft = () => {
-    const difference = +new Date(`2024-07-10T23:59:59`) - +new Date();
+    const difference = +new Date(`2024-07-12T23:59:59`) - +new Date();
     let timeLeft = {};
 
     if (difference > 0) {
@@ -79,7 +79,7 @@ const BonusesSection = () => {
               <h3 className="text-lg font-semibold text-[#202658]">
                 Includes a free tablet for each participant
               </h3>
-              <p className="mt-2 text-md font-medium">Worth Rs 5,500</p>
+              <p className="mt-2 text-md font-medium">Worth Rs 7,500</p>
             </div>
           </div>
           <div className="w-full md:w-5/12 p-2 md:p-4">
@@ -97,7 +97,7 @@ const BonusesSection = () => {
               <h3 className="text-lg font-semibold text-[#202658]">
                 Includes a free smartwatch for each participant
               </h3>
-              <p className="mt-2 text-md font-medium">Worth Rs 3,500</p>
+              <p className="mt-2 text-md font-medium">Worth Rs 4,500</p>
             </div>
           </div>
         </div>
@@ -118,7 +118,7 @@ const BonusesSection = () => {
                 />
               </div>
               <h3 className="text-lg font-semibold text-[#202658]">
-                Enhance your skills with our complimentary Industrial Visit
+                Enhance your skills with our Complimentary Industrial Visit
               </h3>
               <p className="mt-2 text-md font-medium">Worth Rs 2,000</p>
             </div>
@@ -136,7 +136,7 @@ const BonusesSection = () => {
                 />
               </div>
               <h3 className="text-lg font-semibold text-[#202658]">
-                Enhance your skills with our complimentary Workshop
+                Enhance your skills with our Complimentary Workshop
               </h3>
               <p className="mt-2 text-md font-medium">Worth Rs 1,000</p>
             </div>
@@ -146,10 +146,10 @@ const BonusesSection = () => {
 
       <div className="container mx-auto text-center mt-6 md:mt-8">
         <h2 className="text-4xl lg:text-5xl font-bold text-[#202658] text-blue-600 mb-2">
-          Register before 10th July 2024
+          Register before 12th July 2024
         </h2>
         <p className="font-bold text-[#202658] lg:text-4xl mb-2">
-          To Unlock All Bonuses worth Rs 12,000
+          To Unlock All Bonuses worth Rs 15,000
         </p>
         <div className="font-bold text-[#202658] lg:text-2xl mb-2 text-blue-600">
           {timerComponents.length ? timerComponents : <span>Time's up!</span>}
