@@ -11,6 +11,10 @@
 */
 
 /*!
+ * (C) Ionic http://ionicframework.com - MIT License
+ */
+
+/*!
  * Adapted from jQuery UI core
  *
  * http://jqueryui.com
@@ -21,3 +25,5 @@
  *
  * http://api.jqueryui.com/category/ui-core/
  */
+
+/*!__STENCIL_STATIC_IMPORT_SWITCH__*/
